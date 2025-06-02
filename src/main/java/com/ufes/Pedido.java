@@ -59,6 +59,7 @@ public class Pedido {
 
              if(descontoAcumulado > 10.00 ) {
                 descontoAcumulado = 10.00;
+                 break;
              }
         }
 
