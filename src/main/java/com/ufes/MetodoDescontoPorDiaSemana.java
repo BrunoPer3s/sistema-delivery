@@ -26,7 +26,7 @@ public class MetodoDescontoPorDiaSemana  implements IMetodoDescontoTaxaEntrega{
         String diaDaSemanaNome = diaDaSemana.getDisplayName(TextStyle.FULL, Locale.of("pt", "BR"));
 
         
-        pedido.addCupomDescontoTaxaEntrega(new CupomDescontoEntrega("MetodoDescontoTaxaPorBairro", this.descontosDiaSemana.get(diaDaSemanaNome) * (pedido.getTaxaEntrega())/100));
+        pedido.addCupomDescontoTaxaEntrega(new CupomDescontoEntrega("MetodoDescontoPorDiaSemana", this.descontosDiaSemana.get(diaDaSemanaNome) * (pedido.getTaxaEntrega())/100));
     }
 
     @Override
